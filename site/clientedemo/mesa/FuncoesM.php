@@ -147,7 +147,8 @@ if (isset($_POST["mesainicial"])) {
     setcookie($cookie_placa, $cookie_vplaca, time() + (3600 * 5));
 
 
-    header("location: menu.php");
+    header("location: confirmar_celular.php");
+//    header("location: menu.php");
 
     exit;
 
