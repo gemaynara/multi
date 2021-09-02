@@ -1,0 +1,84 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 13 de March de 2021 10:40
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.4.0
+WORDPRESS:	5.5.3
+PHP INFO:	7.3.27 | SAPI: cgi-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 54.5MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20210313_mandaumzap_55a6fbeaaf45d5ca7561_20210313104019_database.sql
+SQL FILE SIZE: 1.23MB (1293455)
+SQL FILE TIME: 2021-03-13 10:40:27
+SQL RUNTIME: 0.13 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  /home2/curs9264/mandaumzap.com/home
+ARCHIVE FILE: 20210313_mandaumzap_55a6fbeaaf45d5ca7561_20210313104019_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	295.43MB
+STATS:	Dirs 1,003 | Files 7,098
+SQL ADDED: 20210313_mandaumzap_55a6fbeaaf45d5ca7561_20210313104019_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 8101
+    [filename] => /home2/curs9264/mandaumzap.com/home/wp-content/backups-dup-lite/tmp/20210313_mandaumzap_55a6fbeaaf45d5ca7561_20210313104019_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 8100
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 187.21MB
+ARCHIVE RUNTIME: 36.95 sec.
+MEMORY STACK: 56.5MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip /home2/curs9264/mandaumzap.com/home/wp-content/backups-dup-lite/tmp/20210313_mandaumzap_55a6fbeaaf45d5ca7561_20210313104019_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.23MB
+INSTALLER FILE: 63.95KB
+ARCHIVE FILE: 188.75MB 
+EXPECTED FILE/DIRECTORY COUNT: 8,101
+ACTUAL FILE/DIRECTORY COUNT: 8,100
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 41.65 sec.
+PEAK PHP MEMORY USED: 58.5MB
+DONE PROCESSING => 20210313_mandaumzap 13 de March de 2021 10:41
+

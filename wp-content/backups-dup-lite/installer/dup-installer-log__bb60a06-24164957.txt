@@ -1,0 +1,436 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 03:34:39
+* VERSION: 1.4.0
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.3.27                                |7.3.28
+OS__________________: Linux                                 |Linux
+CREATED_____________: 2021-03-24 16:49:57
+WP VERSION__________: 5.7
+DUP VERSION_________: 1.4.0
+DB__________________: 5.7.23
+DB TABLES___________: 17
+DB ROWS_____________: 468
+DB FILE SIZE________: 3.23MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.28 | SAPI: cgi-fcgi
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache
+DOC ROOT____________: "/home1/marci487/marciomkti.com.br/demo"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://marciomkti.com.br/demo/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ACTION______: "donothing"
+ARCHIVE ENGINE______: "shellexec_unzip"
+SET DIR PERMS_______: 1
+DIR PERMS VALUE_____: 1363
+SET FILE PERMS______: 1
+FILE PERMS VALUE____: 1363
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "/home1/marci487/marciomkti.com.br/demo/20210313_multidelivery_[HASH]_20210324164957_archive.zip"
+SIZE________________: 192.24MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+BEFORE EXTRACION ACTIONS
+MAINTENANCE MODE ENABLE
+
+
+START ZIP FILE EXTRACTION SHELLEXEC >>> 
+<<< Shell-Exec Unzip Complete.
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+PERMISSION UPDATES:
+    -DIRS:  '755'
+    -FILES: '755'
+
+STEP-1 COMPLETE @ 03:34:44 - RUNTIME: 4.8060 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 03:35:34
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.23 -- Build Server: 5.7.23
+FILE SIZE:	dup-database__[HASH].sql (1.3MB)
+TIMEOUT:	5000
+MAXPACK:	268435456
+SQLMODE:	NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[/home1/marci487/marciomkti.com.br/demo/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	17
+RENAMED TABLES:	0
+QUERIES RAN:	170
+
+wp_categorymeta: (0)
+wp_commentmeta: (0)
+wp_comments: (2)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_member_catmeta: (0)
+wp_options: (159)
+wp_portfolio_catmeta: (0)
+wp_postmeta: (155)
+wp_posts: (74)
+wp_product_catmeta: (0)
+wp_term_relationships: (20)
+wp_term_taxonomy: (8)
+wp_termmeta: (0)
+wp_terms: (8)
+wp_usermeta: (24)
+wp_users: (1)
+Removed '26' cache/transient rows
+
+INSERT DATA RUNTIME: 1.0738 sec.
+STEP-2 COMPLETE @ 03:35:35 - RUNTIME: 1.0798 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 03:36:12
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "MandaUmZap"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home2/curs9264/mandaumzap.com/home"
+path_new______________: "/home1/marci487/marciomkti.com.br/demo"
+siteurl_______________: "http://marciomkti.com.br/demo"
+url_old_______________: "https://mandaumzap.com/home"
+url_new_______________: "http://marciomkti.com.br/demo"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: true
+cache_wp______________: true
+cache_path____________: true
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_categorymeta"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_duplicator_packages"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_member_catmeta"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   159][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_portfolio_catmeta"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:   155][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:    74][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_product_catmeta"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:    20][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     8][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    24][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home2/curs9264/mandaumzap.com/home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  2:"\/home2\/curs9264\/mandaumzap.com\/home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  3:"%2Fhome2%2Fcurs9264%2Fmandaumzap.com%2Fhome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  4:"\home2\curs9264\mandaumzap.com\home" =============> "/home1/marci487/marciomkti.com.br/demo"
+	SEARCH  5:"\\home2\\curs9264\\mandaumzap.com\\home" =========> "\/home1\/marci487\/marciomkti.com.br\/demo"
+	SEARCH  6:"%5Chome2%5Ccurs9264%5Cmandaumzap.com%5Chome" =====> "%2Fhome1%2Fmarci487%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH  7:"//mandaumzap.com/home" ===========================> "//marciomkti.com.br/demo"
+	SEARCH  8:"\/\/mandaumzap.com\/home" ========================> "\/\/marciomkti.com.br\/demo"
+	SEARCH  9:"%2F%2Fmandaumzap.com%2Fhome" =====================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 10:"//www.mandaumzap.com/home" =======================> "//marciomkti.com.br/demo"
+	SEARCH 11:"\/\/www.mandaumzap.com\/home" ====================> "\/\/marciomkti.com.br\/demo"
+	SEARCH 12:"%2F%2Fwww.mandaumzap.com%2Fhome" =================> "%2F%2Fmarciomkti.com.br%2Fdemo"
+	SEARCH 13:"https://marciomkti.com.br/demo" ==================> "http://marciomkti.com.br/demo"
+	SEARCH 14:"https:\/\/marciomkti.com.br\/demo" ===============> "http:\/\/marciomkti.com.br\/demo"
+	SEARCH 15:"https%3A%2F%2Fmarciomkti.com.br%2Fdemo" ==========> "http%3A%2F%2Fmarciomkti.com.br%2Fdemo"
+--------------------------------------
+SCANNED:	Tables:17 	|	 Rows:451 	|	 Cells:3234 
+UPDATED:	Tables:4 	|	 Rows:80 	|	 Cells:92 
+ERRORS:		0 
+RUNTIME:	0.104100 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME "** OBSCURED **"
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	UPDATE FORCE_SSL_ADMIN true
+	UPDATE WP_CACHE true
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+deactivate js_composer/js_composer.php
+Plugin(s) listed here are deactivated: js_composer/js_composer.php
+Plugin(s) reactivated after installation: js_composer/js_composer.php
+MAINTENANCE MODE DISABLE
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 03:36:13 - RUNTIME: 0.1370 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] Info
+	SECTIONS: general
+	LONG MSG:             The following is a list of notices that may need to be fixed in order to finalize your setup. These values should only be investigated if you're running into
+            issues with your site. For more details see the <a href="https://codex.wordpress.org/Editing_wp-config.php" target="_blank">WordPress Codex</a>.
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] Deactivated Plugin:  WPBakery Page Builder
+	SECTIONS: general
+	LONG MSG: This plugin is deactivated automatically, because it requires a reacivation to work properly.  <b>Please reactivate from the WordPress admin panel after logging in.</b> This will re-enable your site's frontend.
+
+====================================
