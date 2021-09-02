@@ -1,0 +1,157 @@
+body{
+    
+background-color: #ebe8e852;
+}
+/* -------- HEADER BEGIN--------- */
+.my-requests header{
+   height: 200px;
+   
+}
+
+.my-requests header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+.my-requests header .background .container-info-client h1{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.my-requests header .background .container-info-client p{
+  margin-top: 10px;
+}
+ 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.my-requests section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 20px;
+    margin-top: 20px;
+/* width: 100%; */
+height: 100%;
+
+}
+.my-requests section h1 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.my-requests section .list-itens {
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+
+}
+.my-requests section .list-itens p{
+    margin: 21px 0;
+    font-family: Montserrat;
+color: #000000;
+
+}
+.my-requests section .list-itens p strong{
+  
+color: #D93D04;
+
+}
+.my-requests section .value-total{
+  margin-top: 15px;
+  margin-bottom: 25px;
+font-family: Montserrat;
+color: #D93D04;
+
+} 
+.my-requests section .requests-status{
+ font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #33C201;
+
+} 
+.my-requests section .requests-status span{
+ color: #33C201;
+ font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+} 
+
+.my-requests section span{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #000000;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.my-requests section span a {
+  color:#000000;
+}
+.my-requests section button{
+    
+/* margin: 0 15px; */
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+width: 100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.my-requests section   button a{
+color: #FFFFFF;
+}
+
+
+
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .my-requests section form {
+    width: 100%;
+    
+}
+}

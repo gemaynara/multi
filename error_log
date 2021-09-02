@@ -1,0 +1,36 @@
+[19-May-2021 15:36:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function vc_build_link() in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php:66
+Stack trace:
+#0 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_box.php(10): include()
+#1 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(343): porto_shortcode_price_box(Array, '\n<ul>\n<li><stro...', 'porto_price_box')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(porto_...', 'do_shortcode_ta...', '[porto_price_bo...')
+#4 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_boxes.php(59): do_shortcode('[porto_price_bo...')
+#5 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_boxes.php(10): include('/home1/marci487...')
+# in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php on line 66
+[19-May-2021 15:36:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function vc_build_link() in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php:66
+Stack trace:
+#0 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_box.php(10): include()
+#1 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(343): porto_shortcode_price_box(Array, '\n<ul>\n<li><stro...', 'porto_price_box')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(porto_...', 'do_shortcode_ta...', '[porto_price_bo...')
+#4 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_boxes.php(59): do_shortcode('[porto_price_bo...')
+#5 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_boxes.php(10): include('/home1/marci487...')
+# in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php on line 66
+[19-May-2021 15:36:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function vc_build_link() in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php:66
+Stack trace:
+#0 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_box.php(10): include()
+#1 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(343): porto_shortcode_price_box(Array, '\n<ul>\n<li><stro...', 'porto_price_box')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(porto_...', 'do_shortcode_ta...', '[porto_price_bo...')
+#4 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_boxes.php(59): do_shortcode('[porto_price_bo...')
+#5 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_boxes.php(10): include('/home1/marci487...')
+# in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php on line 66
+[19-May-2021 15:39:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function vc_build_link() in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php:66
+Stack trace:
+#0 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_box.php(10): include()
+#1 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(343): porto_shortcode_price_box(Array, '\n<ul>\n<li><stro...', 'porto_price_box')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /home1/marci487/marciomkti.com.br/demo/wp-includes/shortcodes.php(218): preg_replace_callback('/\\[(\\[?)(porto_...', 'do_shortcode_ta...', '[porto_price_bo...')
+#4 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_boxes.php(59): do_shortcode('[porto_price_bo...')
+#5 /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/shortcodes/porto_price_boxes.php(10): include('/home1/marci487...')
+# in /home1/marci487/marciomkti.com.br/demo/wp-content/plugins/porto-functionality/shortcodes/templates/porto_price_box.php on line 66

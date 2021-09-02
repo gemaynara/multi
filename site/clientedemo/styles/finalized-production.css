@@ -1,0 +1,220 @@
+
+/* -------- HEADER BEGIN--------- */
+.finalized-production header{
+   height: 200px;
+   
+}
+
+.finalized-production header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100%;
+}
+
+ .finalized-production header .container-logo{
+    height: 200px;
+    margin:  0 auto;
+    
+}
+ .finalized-production header .container-logo h1{
+    color: #FFFFFF
+    
+}
+
+.finalized-production header .container-logo img{
+    margin: 0 70px;
+    margin-top: 40px;
+} 
+.finalized-production header .container-exit-app{
+    margin: 0 50px;
+    margin-top: 40px;
+    height: 80px;
+}
+.finalized-production header .container-exit-app i{
+border: 3px solid #FFFFFF;
+border-radius: 10px;
+font-size: 40px;
+color: #FFFFFF;
+cursor: pointer;
+} 
+
+
+.finalized-production header .container-exit-app h2{
+    color: #FFFFFF
+} 
+
+/* -------- HEADER END--------- */
+
+/* -------- SECTION BEGIN--------- */
+
+.finalized-production section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+     margin-top: 30px;
+   
+}
+
+.finalized-production .container-one{
+    width: 100%;
+    justify-content: center; 
+     display: grid;
+    grid-template-columns: auto auto auto auto;
+     align-items: center;
+
+}
+
+@media (max-width: 1147px) {
+
+    .finalized-production .container-one{
+  
+    grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 877px) {
+
+    .finalized-production .container-one{
+  
+    grid-template-columns: auto auto ;
+}
+}
+@media (max-width: 569px) {
+
+    .finalized-production .container-one{
+  
+    grid-template-columns: auto ;
+    }
+}
+
+.finalized-production .card-finalized{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    width: 250px;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    height: 310px;
+    text-align: start;
+border-radius: 10px;
+border: 1px solid #33C201;
+}
+.finalized-production .card-finalized h1{
+    color: #33C201;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+text-align: justify;
+
+}
+.finalized-production .card-finalized ul li{
+ list-style: none;
+ letter-spacing: 2px;
+ font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.finalized-production .card-finalized address p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.finalized-production .card-finalized h2{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 44px;
+/* identical to box height */
+
+
+color: #D93D04;
+
+}
+.finalized-production .card-finalized button{
+  background: #33C201;
+border-radius: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 29px;
+text-align: center;
+color: #FFFFFF;
+padding: 18px 30px;
+border: none; 
+
+
+}
+
+
+/* -------- SECTION END--------- */
+
+/* -------- FOOTER BEGIN--------- */
+
+.finalized-production footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.finalized-production footer .container-button-group{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 25px; */
+}
+
+.finalized-production footer .container-button-group button{
+    height: 30px;
+    margin: 0 10px;
+    padding: 0 25px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    
+    
+    cursor: pointer;
+}
+.finalized-production footer .container-button-group button a{
+   text-decoration: none;
+   
+}
+.finalized-production footer .container-infos-group{
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+.finalized-production footer .container-infos-group p{
+    padding: 0 5px;
+}
+
+/* -------- FOOTER END--------- */

@@ -1,0 +1,1 @@
+<?php$servidor = '162.241.61.198';$usuario  = 'marci487_ifood';$senha 	  = 'guido242830';$banco    = 'marci487_ifoodcliente';// FUNCOES DO SISTEMA DE CADASTRO ###########$nomesite  = 'MARCIOMKTI';$urlmaster = 'https://marciomkti.com.br/demo'; // APENAS A URL PRINCIPAL SEM A BARRA NO FINAL ---- ----

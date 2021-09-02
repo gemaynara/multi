@@ -1,0 +1,7 @@
+23/10/2020 - V4.0.1
+
+- Inclusão do campo CEP no formulário do delivery.
+- Telas de Local, Horário, Produtos, Pedidos foram transformadas para chamadas em ajax.
+- Melhoria no codigo do front-end.
+- Ajuste no código da comanda dentro do PDV.
+

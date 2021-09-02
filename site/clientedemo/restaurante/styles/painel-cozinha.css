@@ -1,0 +1,221 @@
+
+/* -------- HEADER BEGIN--------- */
+.painel-cozinha header{
+   height: 200px;
+   
+}
+
+.painel-cozinha header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100%;
+}
+
+ .painel-cozinha header .container-logo{
+    height: 200px;
+    margin:  0 auto;
+    
+}
+ .painel-cozinha header .container-logo h1{
+    color: #FFFFFF
+    
+}
+
+.painel-cozinha header .container-logo img{
+    margin: 0 70px;
+    margin-top: 40px;
+} 
+.painel-cozinha header .container-exit-app{
+    margin: 0 50px;
+    margin-top: 40px;
+    height: 80px;
+}
+.painel-cozinha header .container-exit-app i{
+border: 3px solid #FFFFFF;
+border-radius: 10px;
+font-size: 40px;
+color: #FFFFFF;
+cursor: pointer;
+} 
+
+
+.painel-cozinha header .container-exit-app h2{
+    color: #FFFFFF
+} 
+
+/* -------- HEADER END--------- */
+
+/* -------- SECTION BEGIN--------- */
+
+.painel-cozinha section {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+     margin-top: 30px;
+   
+}
+
+.painel-cozinha .container-one{
+    width: 100%;
+    justify-content: center; 
+     display: grid;
+    grid-template-columns: auto auto auto auto;
+     align-items: center;
+}
+
+@media (max-width: 1147px) {
+
+    .painel-cozinha .container-one{
+  
+    grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 877px) {
+
+    .painel-cozinha .container-one{
+  
+    grid-template-columns: auto auto ;
+}
+}
+@media (max-width: 569px) {
+
+    .painel-cozinha .container-one{
+  
+    grid-template-columns: auto ;
+    }
+}
+    
+
+
+.painel-cozinha .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    width: 250px;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    height: 310px;
+    text-align: start;
+border-radius: 10px;
+border: 1px solid #D93D04;
+}
+.painel-cozinha .card h1{
+    color: #F27405;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+text-align: justify;
+
+}
+.painel-cozinha .card ul li{
+ list-style: none;
+ letter-spacing: 2px;
+ font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.painel-cozinha .card address p{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.painel-cozinha .card h2{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 44px;
+/* identical to box height */
+
+
+color: #D93D04;
+
+}
+.painel-cozinha .card button{
+  background: #33C201;
+border-radius: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 29px;
+text-align: center;
+color: #FFFFFF;
+padding: 18px 30px;
+border: none; 
+
+
+}
+
+
+/* -------- SECTION END--------- */
+
+/* -------- FOOTER BEGIN--------- */
+
+.painel-cozinha footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.painel-cozinha footer .container-button-group{
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 25px; */
+}
+
+.painel-cozinha footer .container-button-group button{
+    height: 30px;
+    margin: 0 10px;
+    padding: 0 25px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    
+    cursor: pointer;
+}
+.painel-cozinha footer .container-button-group button a{
+   text-decoration: none;
+   color: white;
+}
+.painel-cozinha footer .container-infos-group{
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+}
+.painel-cozinha footer .container-infos-group p{
+    padding: 0 5px;
+}
+
+/* -------- FOOTER END--------- */

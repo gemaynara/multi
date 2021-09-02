@@ -1,0 +1,179 @@
+body{
+    
+background-color: #ebe8e852;
+}
+/* -------- HEADER BEGIN--------- */
+.payment-card-money-money header{
+   height: 200px;
+   
+}
+
+.payment-card-money header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+.payment-card-money header .background .arrow-back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+
+.payment-card-money header .background .container-info-client h1{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.payment-card-money header .background .container-info-client p{
+  margin-top: 10px;
+}
+ 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.payment-card-money section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 20px;
+    margin-top: 20px;
+/* width: 100%; */
+height: 100%;
+
+}
+.payment-card-money section .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+}
+.payment-card-money section .header-container .options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+.payment-card-money section form {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.payment-card-money section form input{
+    height: 26px;
+    background: #FFFFFF;
+border: 1px solid #F27405;
+border-radius: 15px;
+padding: 10px 25px;
+margin: 10px 0 ;
+
+}
+.payment-card-money section form .cvv-and-due-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.payment-card-money section form .cvv-and-due-date input{
+    padding: 10px 10px;
+    width: 50%;
+
+}
+.payment-card-money section form .cvv-and-due-date .cvv{
+    width: 30%;
+
+}
+.payment-card-money section form label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.payment-card-money section form label input{
+    width: 25px;
+    margin-right: 10px;
+
+}
+.payment-card-money section form .add-card{
+    width: 230px;
+
+}
+
+.payment-card-money section form .money-type {
+    display: flex;
+    flex-direction: column;
+
+}
+.payment-card-money section form .money-type label input{
+    width: 25px;
+    margin-right: 10px;
+
+}
+
+
+
+.payment-card-money section button{
+    
+margin: 20px 0;
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+width: 100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.payment-card-money section   button a{
+color: #FFFFFF;
+}
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .payment-card-money section form {
+    width: 100%;
+    
+}
+}

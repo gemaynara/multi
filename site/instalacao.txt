@@ -1,0 +1,39 @@
+1 - Criar o banco de dados no seu servidor
+2 - Fazer o upload da base de dados >> nozapo53_mdcard.sql <<
+3 - Editar o arquivo na pasta >> funcoes/Conexao.php <<
+4 - Acesso ao sistema principal.
+
+>>  https://SUAURL/site/
+
+5 - Acesso ao Administrativo Master.
+
+>>  https://SUAURL/master/
+>>  Login: 1234
+>>  Senha: 1234
+
+6 - Acesso ao sistema demo.
+
+>>  https://SUAURL/clientedemo
+
+7 - Acesso ao Administrativo do clientedemo.
+
+>>  https://SUAURL/clientedemo/master
+>>  Login: 71950028291
+>>  Senha: 123
+
+
+
+
+
+PARA ADICIONAR A 2º PAGINA PRINCIPAL (HOME)
+
+Você precisa criar mais uma banco de dados,
+acessar o diretorio home e rodar o arquivo installer.php
+EX. seudominio .com.br/home/installer.php
+inserir as informações do BD, USER BD e Senha do USER BD
+
+Apos instalado
+acessar o painel admin da página
+seudominio .com.br/home/wp-admin/
+Login: admin
+Senha: admin123456789

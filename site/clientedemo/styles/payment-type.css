@@ -1,0 +1,184 @@
+body{
+    
+background-color: #ebe8e852;
+}
+/* -------- HEADER BEGIN--------- */
+.payment-type header{
+   height: 200px;
+   
+}
+
+.payment-type header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.payment-type header .background .arrow-back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.payment-type header .background .container-info-client h1{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.payment-type header .background .container-info-client p{
+  margin-top: 10px;
+}
+ 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.payment-type section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 20px;
+    margin-top: 20px;
+/* width: 100%; */
+height: 100%;
+
+}
+.payment-type section span{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+}
+.payment-type section .header-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 ;
+}
+.payment-type section .header-total .number-division{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.payment-type section .header-total .number-division img{
+    width: 20px;
+    height: 20px;
+}
+.payment-type section .header-total .number-division label{
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+border-radius: 8px;
+
+}
+.payment-type section .header-total h1{
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+.payment-type section .header-total h1 p{
+    margin-left: 10px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #D93D04;
+}
+.payment-type section .payment-box{
+   width: 100%;
+   height: 79px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #FFFFFF;
+   border-radius: 15px;
+   margin: 10px 0;
+}
+
+.payment-type section .payment-box .description {
+  width: 50%;
+}
+.payment-type section .payment-box .description  p{
+   font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+}
+.payment-type section .payment-box .description  span{
+ font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: rgba(0, 0, 0, 0.54);
+}
+.payment-type section .payment-box input[type=radio]{
+ width: 25px;
+ height: 25px;
+ 
+}
+
+
+
+
+.payment-type section button{
+    
+margin: 20px 0;
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+width: 100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.payment-type section   button a{
+color: #FFFFFF;
+}
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .payment-type section form {
+    width: 100%;
+    
+}
+}

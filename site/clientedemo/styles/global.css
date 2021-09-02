@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+h2{
+    font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+
+input{
+    outline:none
+}
+
+button{
+    cursor: pointer;
+}
+

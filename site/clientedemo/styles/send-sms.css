@@ -1,0 +1,158 @@
+
+/* -------- HEADER BEGIN--------- */
+.command-sms header{
+   height: 200px;
+   
+}
+
+.command-sms header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+
+ .command-sms header .container-logo{
+    height: 200px;
+    margin:  0 auto;
+    
+    
+}
+ .command-sms header .container-logo h1{
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.command-sms header .container-logo img{
+    margin: 0 70px;
+    margin-top: 40px;
+} 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.command-sms section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+/* height: 100%; */
+/* background-color: tomato; */
+}
+
+.command-sms section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+   padding: 0 30px;
+box-sizing: border-box;
+border-radius: 15px;
+}
+.command-sms section form h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #000000;
+}
+
+
+
+.command-sms section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.command-sms section form .sms-code{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.command-sms section form .sms-code input{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border:none;
+box-sizing: border-box;
+padding: 0 10px;
+margin-top:40px ;
+text-align: center;
+}
+.command-sms section form .sms-code input:focus{
+    border-bottom: 1px solid #000000;
+}
+.command-sms section form .sms-code input::placeholder{
+    color: #F27405;
+    font-size: 35px;
+}
+
+
+.command-sms section form span{
+    margin-top: 108px;
+    margin-bottom: 210px;
+    
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #000000;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+.command-sms section form  button{
+    
+/* margin: 0 15px; */
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+width: 100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.command-sms section form  button a{
+color: #FFFFFF;
+}
+
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .command-sms section form {
+    width: 100%;
+    
+}
+}

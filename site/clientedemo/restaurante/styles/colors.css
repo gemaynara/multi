@@ -1,0 +1,17 @@
+
+.gradient{
+   background: linear-gradient(95.08deg, #F27405 -1.71%, #D93D04 101.4%);
+
+}
+.green{
+   background: #33C201;
+}
+.gradient-disabled{
+ background: linear-gradient(95.08deg, rgba(242, 116, 5, 0.4) -1.71%, rgba(217, 61, 4, 0.4) 101.4%);
+
+
+}
+.green-disabled{
+ background: #33C20180;
+
+}

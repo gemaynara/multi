@@ -1,0 +1,146 @@
+body{
+    
+background-color: #ebe8e852;
+}
+/* -------- HEADER BEGIN--------- */
+.my-account header{
+   height: 200px;
+   
+}
+
+.my-account header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+.my-account header .background .arrow-back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+
+.my-account header .background .container-info-client h1{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.my-account header .background .container-info-client p{
+  margin-top: 10px;
+}
+ 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.my-account section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 20px;
+    margin-top: 20px;
+/* width: 100%; */
+height: 100%;
+
+}
+.my-account section h1 {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+}
+.my-account section .list-itens {
+    padding: 20px 0;
+
+}
+.my-account section .list-itens p{
+    margin: 21px 0;
+    font-family: Montserrat;
+color: #000000;
+
+}
+.my-account section .list-itens p strong{
+  
+color: #D93D04;
+
+}
+.my-account section .value-total{
+  /* margin-top: 5px; */
+  margin-bottom: 25px;
+  text-align: center;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 37px;
+
+
+color: #000000;
+
+}  
+.my-account section .value-total strong{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+color: #D93D04;
+
+}  
+.my-account section button{
+    
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+width: 100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.my-account section   button a{
+color: #FFFFFF;
+}
+
+
+
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .my-account section form {
+    width: 100%;
+    
+}
+}

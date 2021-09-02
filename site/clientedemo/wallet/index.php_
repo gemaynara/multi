@@ -1,0 +1,296 @@
+<?php
+
+include_once('header.php');
+
+if($produtoscx>0){
+
+header("location: acompanhar_pedido.php"); exit;
+
+}
+
+?>
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<link rel="shortcut icon" type="image/png" href="../img/logomarca/<?php print $dadoslogo->foto; ?>" />
+
+<title><?php print $dadosempresa->nomeempresa; ?> - Cardápio de pedidos Online via Whatsapp</title>
+
+<link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+
+<link href="../lib/SpinKit/css/spinkit.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/slim.css">
+
+</head>
+
+<body style="background-color:<?php print $dadosempresa->corfundo; ?>">
+
+<div class="slim-navbar" style="height:320px; background-image:url(../img/fundo_banner/<?php print $dadosfundo->foto; ?>); background-attachment:fixed; height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+	<div class="container">
+
+		   <div class="row mg-t-20">
+
+				
+
+		   	<div class="col-md-4" align="center">
+
+					<div class="mg-b-10"><img src="../img/logomarca/<?php print $dadoslogo->foto; ?>" width="180" height="180" class="bd bd-3 rounded-20"/></div>
+
+						<?php if(isset($_GET["up"])){ echo unlink("".$_GET["up"].""); } ?>
+
+				</div>
+
+
+				<div class="col-md-8" align="center">
+
+					<br />
+
+					<h2 class="mg-b-10"><span style="color:#FFFFFF; text-shadow: 2px 2px black;"><?php print $dadosempresa->nomeempresa; ?></span></h2>
+
+					<h4 class="mg-b-10"><span style="color:#FFFFFF; text-shadow: 2px 2px black;">WALLET</span></h4>	
+
+				</div>
+
+
+			</div>
+
+		  </div>
+
+      </div>
+
+    </div>
+
+	
+
+<div class="slim-navbar sticky-top" style="background-color:<?php print $dadosempresa->cormenu; ?>; display:none">
+
+	<div class="container">
+
+		<ul class="nav">
+
+          
+
+		  <li class="nav-item">
+
+            <a class="nav-link" href="./">
+
+              <i class="fa fa-home tx-20"></i>
+
+              <span class="mg-l-10">INICIAL</span>
+
+            </a>
+
+          </li>
+
+		  
+
+		</ul>
+
+	</div> 
+
+</div>
+
+
+
+    <div class="signin-wrapper">
+
+
+
+      <div class="signin-box" align="center">
+
+        <h4 style="margin-bottom:-1px;">Wallet - Cadastro<span></h4>
+
+      
+
+		<hr />
+
+		<form action="" method="post">
+
+		<input type="hidden" name="Cadwallet" value="ok">
+
+		
+
+		
+
+		<div class="row mg-t-10">
+
+
+
+		 
+
+		 </div>
+
+		
+
+		    <div class="form-group">
+
+			<label>Nome</label>
+
+			<input type="text" class="form-control" name="nome" style="font-size:26px" maxlength="20" required>
+
+			<input type="text" class="form-control" name="wallet" style="font-size:26px; display: none;" maxlength="11" value="<?print $_GET["idwallet"];?>">
+
+			
+
+			
+
+			</div><!-- form-group -->
+
+			<div class="form-group">
+
+			<label>Placa</label>
+
+			<input type="text" class="form-control" name="placa" style="font-size:26px" maxlength="20" required>
+
+			</div><!-- form-group -->
+
+			<div class="form-group">
+
+			<label>Marca</label>
+
+			<input type="text" class="form-control" name="marca" style="font-size:26px" maxlength="20" required>
+
+			</div><!-- form-group -->
+
+
+			<div class="form-group">
+
+			<label>Modelo</label>
+
+			<input type="text" class="form-control" name="modelo" style="font-size:26px" maxlength="20" required>
+
+			</div><!-- form-group -->
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-signin">Cadastrar</button>
+
+		</form>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+
+</div>
+
+<a href="#top" style="color:#999999"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+
+<?php require '../include/fundo.php'; ?> 
+
+    
+
+	<script src="../lib/jquery/js/jquery.js"></script>
+
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+
+<script language="JavaScript">
+
+	window.onload = function() {
+
+		document.addEventListener("contextmenu", function(e){
+
+			e.preventDefault();
+
+		}, false);
+
+		document.addEventListener("keydown", function(e) {
+
+            //document.onkeydown = function(e) {
+
+              // "I" key
+
+              if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+
+              	disabledEvent(e);
+
+              }
+
+              // "J" key
+
+              if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+
+              	disabledEvent(e);
+
+              }
+
+              // "S" key + macOS
+
+              if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+
+              	disabledEvent(e);
+
+              }
+
+              // "U" key
+
+              if (e.ctrlKey && e.keyCode == 85) {
+
+              	disabledEvent(e);
+
+              }
+
+              // "F12" key
+
+              if (event.keyCode == 123) {
+
+              	disabledEvent(e);
+
+              }
+
+          }, false);
+
+		function disabledEvent(e){
+
+			if (e.stopPropagation){
+
+				e.stopPropagation();
+
+			} else if (window.event){
+
+				window.event.cancelBubble = true;
+
+			}
+
+			e.preventDefault();
+
+			return false;
+
+		}
+
+	};
+
+</script>
+
+</body>
+
+</html>
+
+<?php
+
+ob_end_flush();
+
+?>

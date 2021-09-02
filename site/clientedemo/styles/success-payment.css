@@ -1,0 +1,118 @@
+
+body{
+    
+background: linear-gradient(209.31deg, #D93D04 7.88%, #F27405 92.12%);
+
+}
+/* -------- HEADER BEGIN--------- */
+.success-payment header{
+   height: 200px;
+   
+}
+
+.success-payment header .background{
+    display: flex;
+    flex-direction: row;
+    /* background-image: url('../assets/HeaderImage.svg'); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.success-payment header .background .arrow-back{
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+ .success-payment header .container-logo{
+    height: 200px;
+    margin:  0 auto;
+    
+    
+}
+ .success-payment header .container-logo h1{
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.success-payment header .container-logo img{
+    /* margin: 0 70px; */
+    margin-top: 40px;
+} 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.success-payment section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+/* width: 100%; */
+height: 100vh;
+}
+
+.success-payment img{
+margin-top: 70px;
+}
+.success-payment h1{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 37px;
+color: #FFFFFF;
+margin: 20px 0;
+}
+
+.success-payment h2{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.success-payment span{
+    position: relative;
+    top: 30%;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .success-payment section form {
+    width: 100%;
+    
+}
+}

@@ -1,0 +1,205 @@
+
+/* -------- HEADER BEGIN--------- */
+.command header{
+   height: 200px;
+   
+}
+
+.command header .background{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/HeaderImage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100%;
+}
+
+ .command header .container-logo{
+    height: 200px;
+    margin:  0 auto;
+    
+    
+}
+ .command header .container-logo h1{
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+
+.command header .container-logo img{
+    margin: 0 70px;
+    margin-top: 40px;
+} 
+
+
+/* -------- HEADER END--------- */
+
+
+/* -------- SECTION BEGIN--------- */
+
+.command section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 100%;
+/* height: 100vh; */
+/* background-color: tomato; */
+}
+
+.command section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    /* height: 400px; */
+   padding: 0 30px;
+box-sizing: border-box;
+border-radius: 15px;
+}
+
+
+.command section form label{
+    margin: 0 10px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+}
+
+.command section form .container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.command section form .container-main label{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #000000;
+}
+.command section form .container-main input{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #F27405;
+box-sizing: border-box;
+border-radius: 10px;
+padding: 0 10px;
+margin: 20px 0;
+text-align: center;
+}
+
+
+.command section form .container-input input{
+    width: 100%;
+    border: 1px solid #F27405;
+box-sizing: border-box;
+border-radius: 10px;
+height: 40px;
+padding: 0 10px;
+margin-bottom: 15px;
+text-align: start;
+}
+.command section form .container-input .checkbox{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.command section form .container-input .checkbox input{
+width: 28px;
+height: 28px;
+margin-top: 10px;
+margin-right: 25px;
+}
+.command section form .container-input .checkbox .info{
+    text-align: center;
+width: 15px;
+padding: 4px;
+margin-left: 15px;
+border: none;
+background-color: #F27405;
+border-radius: 100%;
+cursor: help;
+
+}
+.command section form .container-input .checkbox:hover   .command section form .container-input .checkbox .info{
+  background-color: #000000;
+}
+
+.command section form .container-input .box-info {
+display: none;
+flex-direction: column;
+position: relative;
+padding: 14px 20px 12px 17px;
+    /* background: #FFFFFF; */
+border: 0.5px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+margin-bottom: 20px;
+ 
+}
+.command section form .container-input .box-info p {
+    text-align: left;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-justify: center;
+color: #000000;
+}
+.command section form .container-input .box-info span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+text-justify: center;
+color: #000000;
+}
+
+.command section form  button{
+    
+/* margin: 0 15px; */
+background: linear-gradient(90.82deg, #D93D04 0%, #F27405 100%);
+border-radius: 10px;
+border: none;
+height: 50px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+.command section form  button a{
+color: #FFFFFF ;
+}
+
+
+/* -------- SECTION END--------- */
+
+@media (max-width:420px) {
+    
+    .command section form {
+    width: 100%;
+    
+}
+}
