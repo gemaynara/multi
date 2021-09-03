@@ -1,8 +1,8 @@
 <?php
 class PagSeguro{
-	private $email         = "SEU EMAIL USADO NO CADASTRO DO PAGSEGURO";
-	private $token_sandbox = "TOKEN DO SANDBOX";
-	private $token_oficial = "TOKEN DO PAGSEGURO";
+	private $email         = "v19022367308772241302@sandbox.pagseguro.com.br";
+	private $token_sandbox = "188DE054E372434C9B186E8B7AB857BD";
+	private $token_oficial = "PUB0E9255205311471F9366699C79C3B1A3";
 	private $url_retorno   = "http://SEUSITE/pagseguro/notificacao.php";
 	
 	//URL OFICIAL

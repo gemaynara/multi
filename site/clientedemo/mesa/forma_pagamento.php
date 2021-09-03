@@ -1,5 +1,6 @@
 <?php
 include_once('header.php');
+include_once("../mesa/pag/configuracoes.php");
 
 if (isset($somando->soma)) {
     echo number_format($somando->soma, 2, ',', ' ');
@@ -8,7 +9,7 @@ if (isset($somando->soma)) {
 }
 
 
-$opcionais = $connect->query("SELECT valor, quantidade FROM store_o WHERE ids = '" . $id_mesa . "' AND idu='$idu' AND meioameio='0'");
+$opcionais = $connect->query("SELECT valor, quantidade FROM store_o WHERE ids = '" . $id_mesa . "' and idu = '$idu' and meioameio = '0'");
 
 $sumx = 0;
 
@@ -23,31 +24,44 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
     $sumx += $totais;
 
 }
+$id_transacao = md5(time());
+
 
 echo $opctg = number_format($sumx, 2, ',', ' ');
 
 
 if (isset($somando->soma)) {
     $geral = $somando->soma + $sumx;
-    echo $gx = number_format($geral, 2, ',', '.');
+    echo $gx = number_format($geral, 2);
 } else {
     print "0,00";
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt - br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="../img/logomarca/<?php print $dadoslogo->foto; ?>"/>
+    <meta charset="UTF - 8">
+    <meta http-equiv="X - UA - Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device - width, initial - scale = 1.0">
+    <link rel="shortcut icon" type="image / png" href=" ../img / logomarca /<?php print $dadoslogo->foto; ?>"/>
 
     <title><?php print $dadosempresa->nomeempresa; ?> - Forma de Pagamento </title>
     <link rel="stylesheet" href="../styles/payment-type.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/colors.css">
+
+    <link rel="stylesheet" href="../mesa/pag/css/checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+          type="text/css">
+    <link href="../mesa/pag/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="icons/fontawesome/styles.min.css" rel="stylesheet" type="text/css">
+    <script src="../mesa/pag/js/jquery.min.js"></script>
+    <script src="../mesa/pag/js/bootstrap.bundle.min.js"></script>
+    <script src="../mesa/pag/js/blockui.min.js"></script>
+    <script type="text/javascript" src="../mesa/pag/js/sweet_alert.min.js"></script>
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet">
@@ -93,80 +107,117 @@ if (isset($somando->soma)) {
 
     </div>
 
-    <form action="" method="post">
-        <label for="credit-card">
-            <div class="payment-box">
-                <img src='../assets/icons/credit-card.png' alt=''/>
+    <div class="page-content">
+        <div class="content-wrapper">
+            <div class="content d-flex justify-content-center align-items-center">
+                <form id="form_login" name="form_login" class="checkout-form" action="" autocomplete="off"
+                      enctype="application/x-www-form-urlencoded" method="post" onsubmit="return false;">
+                    <!--                    <div class="d-sm-flex justify-content-sm-center d-flex justify-content-center d-xl-block mb-3">-->
+                    <!--                        <div class="badge badge-pill bg-grey-300 text-12 font-weight-light valor_cobrado">-->
+                    <!--                            Valor cobrado: <strong class="font-weight-semibold">-->
+                    <?php //echo $gx; ?><!--</strong>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <div class="card mb-0 shadow-0 mt-3 card_sucesso hidden">
+                        <div class="card-body card_sucesso_txt">
+                            Pagamento concluído com sucesso.
+                        </div>
+                    </div>
+                    <div class="card mb-0 shadow-0 mt-3 card_pagamento">
+                        <div class="card-heading">
+                            <ul class="nav nav-tabs nav-justified nav-tabs-solid border-0 shadow-0 tabs_checkout">
+                                <li class="nav-item"><a id="tab_cartao" href="#tab-cartao"
+                                                        class="nav-link tab_checkout pt-2 pb-2 active show"
+                                                        data-toggle="tab">CRÉDITO</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="card-body">
 
-                <div class="description">
-                    <p>Cartão de crédito</p>
-                    <span>visa, mastercard, paypal</span>
-                </div>
+                            <div class="tab-content">
 
-                <input type="radio" name='payment-method' value="credit-card" id="credit-card"/>
+                                <div class="tab-pane active show" id="tab-cartao">
 
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control" id="cartao_nome"
+                                                       placeholder="Nome do titular" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-md-2 col-sm-4">
+                                            <div class="form-group">
+                                                <input class="form-control" id="cartao_celular"
+                                                       placeholder="Celular do titular" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-md-2 col-sm-3 col-8">
+                                            <div class="form-group">
+                                                <input class="form-control" id="cartao_cpf" placeholder="CPF do titular"
+                                                       type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-md-2 col-sm-3 col-4">
+                                            <div class="form-group">
+                                                <input class="form-control" id="cartao_data_nascimento"
+                                                       placeholder="Nascimento" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-md-7 col-sm-7 col-6">
+                                            <div class="form-group">
+                                                <input autocomplete="off" class="form-control" id="cartao_numero"
+                                                       placeholder="Número do Cartão" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-3 col-sm-3 col-3">
+                                            <div class="form-group">
+                                                <input autocomplete="off" class="form-control" id="cartao_validade"
+                                                       placeholder="Validade" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-md-2 col-sm-2 col-3">
+                                            <div class="form-group">
+                                                <input autocomplete="off" class="form-control" id="cartao_cvv"
+                                                       placeholder="CVV" type="text" value=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <select id="cartao_bandeira" class="form-control">
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input value="1" id="cartao_parcelas" type="hidden"
+                                                       class="form-control hidden">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <input type="hidden" id="id_transacao" value="
+                            <?php echo $id_transacao; ?>"/>
+                            <input type="hidden" id="total" value="<?php echo $gx; ?>"/>
+                            <input type="hidden" id="descricao" value="Aqui vai a descrição do item comprado."/>
+                            <input type="hidden" id="forma_de_pagamento" value="Cartão"/>
+                            <input type="hidden" id="banco" value="bancodobrasil"/>
+                            <button type="submit" id="botao_pagar" class="btn bg-green btn-block"><span>Pagar</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </label>
+        </div>
+    </div>
 
-
-        <label for="debit-card">
-            <div class="payment-box">
-                <img src='../assets/icons/debit-card.png' alt=''/>
-
-                <div class="description">
-                    <p>Cartão de débito</p>
-                    <span>visa, mastercard, paypal</span>
-                </div>
-
-                <input type="radio" name='payment-method' value="debit-card" id='debit-card'/>
-
-
-            </div>
-        </label>
-
-
-        <label for="money">
-            <div class="payment-box">
-                <img src='../assets/icons/money.png' alt=''/>
-
-                <div class="description">
-                    <p>Dinheiro</p>
-                </div>
-
-                <input type="radio" name='payment-method' value="money" id='money'/>
-
-
-            </div>
-        </label>
-
-        <label for="money-and-card">
-            <div class="payment-box">
-                <img src='../assets/icons/credit-and-money.png' alt=''/>
-
-                <div class="description">
-                    <p>Cartão + Dinheiro</p>
-                    <span>visa, mastercard, paypal</span>
-                </div>
-
-                <input type="radio" name='payment-method' value="money-and-card" id='money-and-card'/>
-
-
-            </div>
-        </label>
-
-
-        <button type="submit">
-            <input type="hidden" name="pagamento" class="form-control">
-            <input type="hidden" name="valor_total" class="form-control" value="<?= $geral; ?>">
-            <a>
-                Prosseguir Pagamento
-            </a>
-        </button>
-    </form>
 
 </section>
-
+<script type="text/javascript" src="<?php echo $pagseguro_url_js; ?>"></script>
+<script type="text/javascript" src="../mesa/pag/js/numeral.min.js"></script>
+<script type="text/javascript" src="../mesa/pag/js/jquery.inputmask.bundle.min.js"></script>
+<script type="text/javascript" src="../mesa/pag/js/pagseguro.js"></script>
 
 </body>
 
