@@ -1,7 +1,7 @@
 <?php
 
 include_once('header.php');
-
+require_once('/site/Class/Sms.php')
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -23,7 +23,7 @@ include_once('header.php');
         <!-- https://www.figma.com/file/FPnjW0My7jn4sC207LtNWS/Prot%C3%B3tipo-QR-Chef -->
     </head>
 
-    <body class="command-sms">
+    <body class="command-sms" >
 
     <header>
         <div class="background">

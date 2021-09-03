@@ -147,8 +147,8 @@ if (isset($_POST["mesainicial"])) {
     setcookie($cookie_placa, $cookie_vplaca, time() + (3600 * 5));
 
 
-    header("location: confirmar_celular.php");
-//    header("location: menu.php");
+//    header("location: confirmar_celular.php");
+    header("location: menu.php");
 
     exit;
 
@@ -192,7 +192,23 @@ if (isset($_POST["mesapedido"])) {
     $update = $connect->query("UPDATE store_o SET status='1' WHERE ids='$idloja'");
 
 
-    header("location: acompanhar_pedido.php");
+//    header("location: acompanhar_pedido.php");
+    header("location: forma_pagamento.php");
+
+
+}
+
+
+if (isset($_POST["pagamento"])) {
+
+    $total_valor = $_POST['valor_total'];
+    $forma_pag = $_POST['payment-method'];
+
+    if ($forma_pag != 'money'){
+
+    }
+    var_dump($total_valor, $forma_pag);
+    exit();
 
 
 }

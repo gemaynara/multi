@@ -20,7 +20,6 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
 }
 
 
-
 ?>
 
     <!DOCTYPE html>
@@ -112,7 +111,6 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
             </div>
 
             <form action="" method="post">
-
                 <input type="hidden" name="mesapedido" value="ok">
 
                 <input type="hidden" name="idloja" value="<?= $id_mesa; ?>">
@@ -127,21 +125,22 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
 
                 <input type="hidden" name="pcelular" value="<?php print $_COOKIE['celularM']; ?>">
 
-                <input type="hidden" name="subtotal" class="form-control"
-                       value="<?= $somando->soma; ?>">
+                <input type="hidden" name="subtotal" class="form-control" value="<?= $somando->soma; ?>">
 
                 <input type="hidden" name="adcionais" class="form-control" value="<?= $sumx; ?>">
 
                 <input type="hidden" name="totalg" class="form-control" value="<?= $geral; ?>">
 
-                <button type="submit" class="btn btn-success btn-block mg-b-10"> Encerrar Conta</button>
+
+                <button type="submit" class="btn btn-success btn-block mg-b-10"> Ir Para Pagamento</button>
+                <!--                <button type="submit" class="btn btn-success btn-block mg-b-10"> Encerrar Conta</button>-->
 
             </form>
 
 
     </section>
 
-    <?php require '../include/fundo.php'; ?>
+    <!--    --><?php //require '../include/fundo.php'; ?>
 
 
     <script src="../lib/jquery/js/jquery.js"></script>

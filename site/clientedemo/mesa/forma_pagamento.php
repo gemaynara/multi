@@ -1,5 +1,38 @@
 <?php
 include_once('header.php');
+
+if (isset($somando->soma)) {
+    echo number_format($somando->soma, 2, ',', ' ');
+} else {
+    print "0,00";
+}
+
+
+$opcionais = $connect->query("SELECT valor, quantidade FROM store_o WHERE ids = '" . $id_mesa . "' AND idu='$idu' AND meioameio='0'");
+
+$sumx = 0;
+
+while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
+
+    $quantop = $valork->quantidade;
+
+    $valorop = $valork->valor;
+
+    $totais = $valorop * $quantop;
+
+    $sumx += $totais;
+
+}
+
+echo $opctg = number_format($sumx, 2, ',', ' ');
+
+
+if (isset($somando->soma)) {
+    $geral = $somando->soma + $sumx;
+    echo $gx = number_format($geral, 2, ',', '.');
+} else {
+    print "0,00";
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +60,10 @@ include_once('header.php');
 <header>
     <div class="background">
         <div class="arrow-back">
-            <img src="../assets/icons/arrow-white.png" />
+            <img src="../assets/icons/arrow-white.png"/>
         </div>
         <div class="container-info-client">
-            <img src="../assets/Logo.png" />
+            <img src="../assets/Logo.png"/>
             <h1>Formas de pagamento</h1>
         </div>
     </div>
@@ -38,110 +71,101 @@ include_once('header.php');
 
 <section>
 
-    <span>Divisão por Nº de pessoas: </span>
+    <!--    <span>Divisão por Nº de pessoas: </span>-->
 
     <div class="header-total">
 
         <div class="number-division">
 
-            <img src="../assets/icons/left-black.png" atl='seta para diminuir preta'/>
-            <label>
-                1
-            </label>
-            <img src="../assets/icons/right-black.png" atl='seta para aumentar preta' />
+            <!--            <img src="../assets/icons/left-black.png" atl='seta para diminuir preta'/>-->
+            <!--            <label>-->
+            <!--                1-->
+            <!--            </label>-->
+            <!--            <img src="../assets/icons/right-black.png" atl='seta para aumentar preta'/>-->
 
         </div>
 
 
         <h1>
-            Total: <p> R$XXX,XX</p>
+            Total: <p>R$ <?= $gx ?>
+            </p>
         </h1>
 
     </div>
 
+    <form action="" method="post">
+        <label for="credit-card">
+            <div class="payment-box">
+                <img src='../assets/icons/credit-card.png' alt=''/>
 
-    <label for="credit-card">
-        <div class="payment-box" >
-            <img src='../assets/icons/credit-card.png' alt='' />
+                <div class="description">
+                    <p>Cartão de crédito</p>
+                    <span>visa, mastercard, paypal</span>
+                </div>
 
-            <div class="description">
-                <p>Cartão de crédito</p>
-                <span>visa, mastercard, paypal</span>
+                <input type="radio" name='payment-method' value="credit-card" id="credit-card"/>
+
+
             </div>
-
-            <input type="radio" name='payment-method' value="credit-card" id="credit-card"/>
-
-
-        </div>
-    </label>
+        </label>
 
 
-    <label for="debit-card">
-        <div class="payment-box">
-            <img src='../assets/icons/debit-card.png' alt='' />
+        <label for="debit-card">
+            <div class="payment-box">
+                <img src='../assets/icons/debit-card.png' alt=''/>
 
-            <div class="description">
-                <p>Cartão de débito</p>
-                <span>visa, mastercard, paypal</span>
+                <div class="description">
+                    <p>Cartão de débito</p>
+                    <span>visa, mastercard, paypal</span>
+                </div>
+
+                <input type="radio" name='payment-method' value="debit-card" id='debit-card'/>
+
+
             </div>
-
-            <input type="radio" name='payment-method' value="debit-card" id='debit-card'/>
-
-
-        </div>
-    </label>
+        </label>
 
 
-    <label for="money">
-        <div class="payment-box">
-            <img src='../assets/icons/money.png' alt='' />
+        <label for="money">
+            <div class="payment-box">
+                <img src='../assets/icons/money.png' alt=''/>
 
-            <div class="description">
-                <p>Dinheiro</p>
+                <div class="description">
+                    <p>Dinheiro</p>
+                </div>
+
+                <input type="radio" name='payment-method' value="money" id='money'/>
+
+
             </div>
+        </label>
 
-            <input type="radio" name='payment-method' value="money" id='money'/>
+        <label for="money-and-card">
+            <div class="payment-box">
+                <img src='../assets/icons/credit-and-money.png' alt=''/>
+
+                <div class="description">
+                    <p>Cartão + Dinheiro</p>
+                    <span>visa, mastercard, paypal</span>
+                </div>
+
+                <input type="radio" name='payment-method' value="money-and-card" id='money-and-card'/>
 
 
-        </div>
-    </label>
-
-    <label for="money-and-card">
-        <div class="payment-box">
-            <img src='../assets/icons/credit-and-money.png' alt='' />
-
-            <div class="description">
-                <p>Cartão + Dinheiro</p>
-                <span>visa, mastercard, paypal</span>
             </div>
-
-            <input type="radio" name='payment-method' value="money-and-card" id='money-and-card'/>
-
-
-        </div>
-    </label>
+        </label>
 
 
-
-
-
-
-
-
-    <button>
-        <a href="payment-card.html">
-            Prosseguir Pagamento
-        </a>
-    </button>
-
-
-
-
+        <button type="submit">
+            <input type="hidden" name="pagamento" class="form-control">
+            <input type="hidden" name="valor_total" class="form-control" value="<?= $geral; ?>">
+            <a>
+                Prosseguir Pagamento
+            </a>
+        </button>
+    </form>
 
 </section>
-
-
-
 
 
 </body>
