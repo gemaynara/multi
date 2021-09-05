@@ -61,7 +61,9 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
     <header>
         <div class="background">
             <div class="arrow-back">
-                <img src="../assets/icons/arrow-white.png"/>
+                <a href="menu.php">
+                    <img src="../assets/icons/arrow-white.png"/>
+                </a>
             </div>
             <div class="container-info-client">
                 <img src="../assets/Logo.png"/>
@@ -130,7 +132,6 @@ while ($valork = $opcionais->fetch(PDO::FETCH_OBJ)) {
                 <input type="hidden" name="adcionais" class="form-control" value="<?= $sumx; ?>">
 
                 <input type="hidden" name="totalg" class="form-control" value="<?= $geral; ?>">
-
 
                 <button type="submit" class="btn btn-success btn-block mg-b-10"> Ir Para Pagamento</button>
                 <!--                <button type="submit" class="btn btn-success btn-block mg-b-10"> Encerrar Conta</button>-->

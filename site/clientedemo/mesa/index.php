@@ -45,7 +45,7 @@ if ($produtoscx > 0) {
                 <label>
                     Nº da Mesa
                     <?php if (isset($_GET["idmesa"])) { ?>
-                        <input type="number" required max="3" min="2" <?= $_GET["idmesa"]; ?>/>
+                        <input type="number" required max="999" min="1" value="<?= $_GET["idmesa"]; ?>"/>
                         <input type="hidden" name="mesa" value="<?= $_GET["idmesa"]; ?>">
 
                     <?php } else {

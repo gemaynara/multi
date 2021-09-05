@@ -39,6 +39,12 @@ $maisPedidos1 = $maisPedidos->fetchAll(PDO::FETCH_ASSOC);
 $bebidas = $connect->query("SELECT * FROM marci487_ifoodcliente.produtos where categoria = 109");
 $bebidasAll = $bebidas->fetchAll(PDO::FETCH_ASSOC);
 
+$sobremesas = $connect->query("SELECT * FROM marci487_ifoodcliente.produtos where categoria = 108");
+$sobremesasAll = $sobremesas->fetchAll(PDO::FETCH_ASSOC);
+
+$pratoPricipal = $connect->query("SELECT * FROM marci487_ifoodcliente.produtos where categoria = 107");
+$pratoPricipalAll = $pratoPricipal->fetchAll(PDO::FETCH_ASSOC);
+
 
 $categoriasm = $connect->query("SELECT * FROM categorias WHERE idu='$idu' ORDER BY posicao ASC");
 

@@ -43,9 +43,8 @@ if (isset($somando->soma)) {
 
 <head>
     <meta charset="UTF - 8">
-    <meta http-equiv="X - UA - Compatible" content="IE = edge">
     <meta name="viewport" content="width = device - width, initial - scale = 1.0">
-    <link rel="shortcut icon" type="image / png" href=" ../img / logomarca /<?php print $dadoslogo->foto; ?>"/>
+    <link rel="shortcut icon" type="image/png" href="../img/logomarca/<?php print $dadoslogo->foto; ?>"/>
 
     <title><?php print $dadosempresa->nomeempresa; ?> - Forma de Pagamento </title>
     <link rel="stylesheet" href="../styles/payment-type.css">
@@ -65,6 +64,12 @@ if (isset($somando->soma)) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet">
+
+    <style>
+        pre{
+            display: none;
+        }
+    </style>
 
     <!-- https://www.figma.com/file/FPnjW0My7jn4sC207LtNWS/Prot%C3%B3tipo-QR-Chef -->
 </head>
@@ -112,12 +117,7 @@ if (isset($somando->soma)) {
             <div class="content d-flex justify-content-center align-items-center">
                 <form id="form_login" name="form_login" class="checkout-form" action="" autocomplete="off"
                       enctype="application/x-www-form-urlencoded" method="post" onsubmit="return false;">
-                    <!--                    <div class="d-sm-flex justify-content-sm-center d-flex justify-content-center d-xl-block mb-3">-->
-                    <!--                        <div class="badge badge-pill bg-grey-300 text-12 font-weight-light valor_cobrado">-->
-                    <!--                            Valor cobrado: <strong class="font-weight-semibold">-->
-                    <?php //echo $gx; ?><!--</strong>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
+
                     <div class="card mb-0 shadow-0 mt-3 card_sucesso hidden">
                         <div class="card-body card_sucesso_txt">
                             Pagamento concluído com sucesso.
@@ -127,7 +127,7 @@ if (isset($somando->soma)) {
                         <div class="card-heading">
                             <ul class="nav nav-tabs nav-justified nav-tabs-solid border-0 shadow-0 tabs_checkout">
                                 <li class="nav-item"><a id="tab_cartao" href="#tab-cartao"
-                                                        class="nav-link tab_checkout pt-2 pb-2 active show"
+                                                        class="nav-link text-size-large tab_checkout pt-2 pb-2 active show"
                                                         data-toggle="tab">CRÉDITO</a></li>
                             </ul>
                         </div>

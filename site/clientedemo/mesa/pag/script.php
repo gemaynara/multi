@@ -192,7 +192,8 @@ $primeiro_nome = explode(" ", $nome);
 $primeiro_nome = $primeiro_nome[0];
 
 if($status == "Aguardando pagamento" OR $status == "Em análise" OR $status == "Paga" ){
-$msgm = "<p>Obrigado, <strong>".$primeiro_nome."</strong>!</p> <p>O status atual do seu pagamento via <strong>".$forma."</strong> é <strong>".$status."</strong> e o código da transação junto ao PagSeguro é <strong>".$codigo."</strong>.</p> <p>O valor total é de <strong>".$bruto."</strong>, do qual <strong>".$liquido."</strong> receberemos e <strong>".$taxa."</strong> será pago ao PagSeguro como taxa pela intermediação da transação.</p>";
+//$msgm = "<p>Obrigado, <strong>".$primeiro_nome."</strong>!</p> <p>O status atual do seu pagamento via <strong>".$forma."</strong> é <strong>".$status."</strong> e o código da transação junto ao PagSeguro é <strong>".$codigo."</strong>.</p> <p>O valor total é de <strong>".$bruto."</strong>, do qual <strong>".$liquido."</strong> receberemos e <strong>".$taxa."</strong> será pago ao PagSeguro como taxa pela intermediação da transação.</p>";
+$msgm = "<p>Obrigado, <strong> cliente </strong>!</p> <p>O status atual do seu pagamento via <strong>".$forma."</strong> é <strong>".$status."</strong> e o código da transação junto ao PagSeguro é <strong>".$codigo."</strong>.</p> <a target='_blank' href='/demo/site/clientedemo/mesa/acompanhar_pedido.php'><p>Ver pedido </p></a> ";
 print '{ "estatus" : "sucesso", "estatusTexto" : "'.$msgm.'" }';
 }else{
 foreach( $xml as $error ){$erro = $error->message;}
